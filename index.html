@@ -20,26 +20,47 @@
   </head>
   <body>
     <header class="primary-header">
-      <div class="conatiner">
-        <a href="#"
-          ><img
-            src="assets/web-development-svgrepo-com.svg"
-            alt="logo"
-            width="20px"
-        /></a>
-        <nav class="primary-nav">
-          <ul role="list" class="nav-list">
-            <li><a href="#home" alt="Go to Home">HOME</a></li>
-            <li><a href="#about" alt="Learn more about me">ABOUT</a></li>
-            <li><a href="#projects" alt="View my projects">PROJECTS</a></li>
-            <li><a href="#contact" alt="Contact me">CONTACT ME</a></li>
-          </ul>
-        </nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#"
+            ><img
+              src="assets/logo-svg.svg"
+              alt="logo"
+              width="65px"
+          /></a>
+          <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+            <img
+              width="65px"
+              height="65px"
+              class="icon-close"
+              src="assets/close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              width="65px"
+              height="65px"
+              class="icon-menu"
+              src="assets/mobile_menu_bar_element_navigation_site.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav id="primary-nav" class="primary-nav">
+            <ul role="list" class="nav-list">
+              <li><a href="#home" alt="Go to Home">HOME</a></li>
+              <li><a href="#about" alt="Learn more about me">ABOUT</a></li>
+              <li><a href="#projects" alt="View my projects">PROJECTS</a></li>
+              <li><a href="#contact" alt="Contact me">CONTACT ME</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="padding-block-700 ">
+      <section class="padding-block-700">
         <div class="container">
           <div class="even-columns">
             <div>
@@ -48,7 +69,9 @@
                 I’m a Software Developer with a Degree in Computer Science, I
                 currently work at Birzeit University as a Teaching Assistant
               </p>
-              <button class="button" data-theme="primary-btn">GET IN TOUCH</button>
+              <button class="button" data-theme="primary-btn">
+                GET IN TOUCH
+              </button>
             </div>
             <div>
               <img
@@ -60,5 +83,6 @@
         </div>
       </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
