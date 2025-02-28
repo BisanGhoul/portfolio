@@ -25,7 +25,7 @@
   --fw-light: 300;
 
   /*48 40 36 32 28 24 20 16 14*/
-  --fs-900: 3rem;
+  --fs-900: 4.5rem;
   --fs-800: 2.5rem;
   --fs-700: 2.25rem;
   --fs-600: 2rem;
@@ -232,3 +232,35 @@ body {
   color: var(--primary-txt-clr);
   background-color: var(--main-bg-clr);
 }
+
+/* button*/
+.button{
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 4px 4px 0px 0px black;
+    border-radius: 100vmax;
+    border: 1px solid black;
+    padding: 0.5em;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-400);
+    color: var(--primary-txt-clr);
+    line-height: 1;
+    /* font-size: 24px; */
+    transition: all 0.3s ease;
+}
+
+.button[data-theme="primary-btn"]{
+    background-color: var(--primary-btn-clr);
+    /* transform: rotate(-10deg); */
+}
+
+.button[data-theme="primary-btn"]:hover,
+.button[data-theme="primary-btn"]:focus-visible{
+    background-color: var(--primary-btn-dim-clr);
+}
+
+.button:active {
+    transform: scale(0.95);
+    box-shadow: none; 
+}
+
