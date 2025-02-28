@@ -190,3 +190,12 @@ svg {
     font-size: var(--fs-300);
   }
 
+/* general styling*/
+body{
+    font-size: var(--fs-300);
+    font-family: var(--ff-primary);
+    color: var(--primary-txt-clr);
+    background-color: var(--main-bg-clr);
+}
+
+
