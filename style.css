@@ -1,18 +1,18 @@
 :root {
-    --main-bg-clr: hsl(60,100,87,100%);
-    --primary-bg-clr: hsl(312,98,79,100%);
-    --secondary-bg-clr: hsl(173,65,38,100%);
+    --main-bg-clr: hsl(60, 100%, 87%); 
+    --primary-bg-clr: hsl(312, 98%, 79%);
+    --secondary-bg-clr: hsl(173, 65%, 38%);
 
-    --primary-btn-clr: hsl(204,100,79,100%);
+    --primary-btn-clr: hsl(204, 100%, 79%);
     --primary-btn-dim-clr: hsl(204, 75%, 86%);
-    --secondary-btn-clr:hsl(52,100,50,100%);
-    --secondary-btn-dim-clr:hsl(52, 100%, 72%);
+    --secondary-btn-clr: hsl(52, 100%, 50%);
+    --secondary-btn-dim-clr: hsl(52, 100%, 72%);
 
-    --primary-txt-clr: hsl(0,0,0,100%);
-    --secondary-txt-clr: hsl(60,100,87,100%);
+    --primary-txt-clr: hsl(0, 0%, 0%);
+    --secondary-txt-clr: hsl(60, 100%, 87%);
     
-    --badge-clr: hsl(52,100,50,100%);
-    --link-hover-clr: hsl(204,100,79,100%);
+    --badge-clr: hsl(52, 100%, 50%);
+    --link-hover-clr: hsl(204, 100%, 79%);
 
     --ff-primary: "Work Sans", serif; 
     --ff-secondary: "Lexend Mega", serif; 
@@ -157,6 +157,11 @@ svg {
 
   /* Font Sizes */
   /*TODO: named classes will change with media queries*/
+  .fs-title{
+    font-size: var(--fs-title);
+
+  }
+
   .fs-primary-heading {
     font-size: var(--fs-primary-heading);
   }
@@ -184,5 +189,4 @@ svg {
   .fs-300 {
     font-size: var(--fs-300);
   }
-  
-/*utility classes*/
+
