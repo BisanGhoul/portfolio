@@ -222,10 +222,18 @@ svg {
   --max-width: 1320px;
   --horizontal-padding: 1rem;
 
-  background-color: aqua; /*testing purposes will remove later*/
+  /*background-color: aqua; testing purposes will remove later*/
   width: min(var(--max-width), calc(100% - (var(--horizontal-padding) * 2)));
   margin-inline: auto;
 }
+
+.flow > * + * {
+  margin-top: var(--flow-spacer, 1rem);
+}
+
+/* div{
+    --flow-spacer: 3em;
+} */
 
 .even-columns {
   display: grid;
@@ -300,11 +308,12 @@ body {
   color: var(--primary-txt-clr);
   font-weight: var(--fw-bold);
   display: flex;
-  gap: clamp(var(--size-400),5vw,var(--size-700));
+  gap: clamp(var(--size-400), 5vw, var(--size-700));
 }
 
-.nav-list a{
-    text-decoration: none;
+.nav-list a {
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .nav-list a:hover,
@@ -320,6 +329,15 @@ body {
 a:visited,
 a:active {
   color: var(--primary-txt-clr);
+}
+
+#home-img {
+  justify-self: flex-end;
+  align-self: center;
+}
+
+#home-text {
+  align-self: center;
 }
 
 @media (max-width: 50em) {
@@ -348,10 +366,10 @@ a:active {
     padding-bottom: 0.5rem; 
 } */
 
-.nav-list a:hover,
-.nav-list a:focus {
+  .nav-list a:hover,
+  .nav-list a:focus {
     background-color: var(--link-hover-clr);
-}
+  }
 
   .primary-nav[data-visible] {
     display: block;
@@ -367,5 +385,10 @@ a:active {
 
   .mobile-nav-toggle .icon-close {
     display: none;
+  }
+
+  #home-img {
+    margin-top: var(--size-300);
+    justify-self: center;
   }
 }
