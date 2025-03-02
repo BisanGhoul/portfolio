@@ -37,7 +37,7 @@
 
   --fs-title: var(--fs-900);
   --fs-primary-heading: var(--fs-800);
-  --fs-secondary-heading: var(--fs-600);
+  --fs-secondary-heading: var(--fs-700);
   --fs-badge: var(--fs-400);
   --fs-body: var(--fs-300);
   --fs-form-label: var(--fs-600);
@@ -190,6 +190,8 @@ svg {
 
 .fs-secondary-heading {
   font-size: var(--fs-secondary-heading);
+  margin-bottom: var(--size-700);
+
 }
 
 .fs-900 {
@@ -400,4 +402,37 @@ a:active {
 #about-section {
   background-color: var(--primary-bg-clr);
   padding-block: var(--size-500);
+}
+
+#about-section p {
+  /* max-width: clamp(60ch, 60vw, 40ch); */
+  font-size: var(--fs-400);
+}
+
+.skills-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+    margin: var(--size-200);
+}
+
+.skill-badge {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 100vmax;
+  box-shadow: 4px 4px 0px 0px black;
+  font-size: var(--fs-400);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-light);
+  color: var(--primary-txt-clr);
+  text-transform: uppercase;
+  line-height: 1;
+  background-color: var(--link-hover-clr);
+  padding: var(--size-300);
 }
