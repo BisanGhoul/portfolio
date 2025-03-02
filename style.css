@@ -190,7 +190,7 @@ svg {
 
 .fs-secondary-heading {
   font-size: var(--fs-secondary-heading);
-  margin-bottom: var(--size-700);
+  margin-bottom: var(--size-500);
 
 }
 
@@ -407,6 +407,7 @@ a:active {
 #about-section p {
   /* max-width: clamp(60ch, 60vw, 40ch); */
   font-size: var(--fs-400);
+  text-align: justify; 
 }
 
 .skills-list ul {
@@ -427,7 +428,7 @@ a:active {
   border: 1px solid black;
   border-radius: 100vmax;
   box-shadow: 4px 4px 0px 0px black;
-  font-size: var(--fs-400);
+  font-size: var(--fs-350);
   font-family: var(--ff-secondary);
   font-weight: var(--fw-light);
   color: var(--primary-txt-clr);
@@ -435,4 +436,12 @@ a:active {
   line-height: 1;
   background-color: var(--link-hover-clr);
   padding: var(--size-300);
+}
+
+@media (max-width: 50em) {
+    #about-section p {
+        /* max-width: clamp(60ch, 60vw, 40ch); */
+        font-size: var(--fs-300);
+        text-align: start; 
+      }
 }
