@@ -237,7 +237,7 @@ svg {
 
 .even-columns {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 @media (min-width: 50em) {
@@ -290,7 +290,7 @@ body {
 /* navigation */
 
 .primary-header {
-  margin-top: var(--size-500);
+  padding-top: var(--size-100);
 }
 
 .nav-wrapper {
