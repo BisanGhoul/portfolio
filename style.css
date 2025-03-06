@@ -2,6 +2,7 @@
   --main-bg-clr: hsl(60, 100%, 87%);
   --primary-bg-clr: hsl(312, 98%, 79%);
   --secondary-bg-clr: hsl(173, 65%, 38%);
+  --form-bg-clr: hsl(173, 65%, 38%);
 
   --primary-btn-clr: hsl(204, 100%, 79%);
   --primary-btn-dim-clr: hsl(204, 75%, 86%);
@@ -248,6 +249,10 @@ svg {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+  #home-section{
+    height: 100vh;
+    margin-top: var(--size-700);
+  }
 }
 
 /* general styling*/
@@ -463,6 +468,60 @@ a:active {
   .proj-description {
     font-size: var(--fs-300);
 }
+}
+
+/* form */
+
+#contact-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-container {
+  --max-width: 550px;
+  --horizontal-padding: 1rem;
+
+  width: min(var(--max-width), calc(100% - (var(--horizontal-padding) * 2)));
+  margin-inline: auto;
+  background-color: var(--form-bg-clr);
+  padding:var(--horizontal-padding);
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 8px 8px 0px black; 
+  font-size: var(--fs-400);
+}
+
+.button-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button[type="submit"]{
+  margin-top: 0.5rem;
+  padding-block: 0.2rem;
+  background-color: var(--secondary-btn-clr);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 100vmax;
+  background-color: var(--main-bg-clr);
+}
+
+textarea {
+  border-radius: 40px;
+  height: 150px;
 }
 
 
