@@ -244,7 +244,7 @@ svg {
 
 .even-columns {
   display: grid;
-  gap: 1.5rem;
+  gap: 3rem;
 }
 
 @media (min-width: 50em) {
@@ -254,7 +254,6 @@ svg {
   }
   #home-section{
     height: 100vh;
-    margin-top: var(--size-700);
   }
 }
 
@@ -404,6 +403,10 @@ a:active {
   }
 }
 
+#home-section{
+  background-image: url("assets/Blue_Grid_Pattern_Background.png");
+}
+
 /* about me section */
 
 #about-section {
@@ -446,6 +449,11 @@ a:active {
 }
 
 /* projects section */
+.projects-container{
+  background-color: #C0FF12;
+  border-radius: 10px;
+  border: 2px solid black;
+}
 
 .proj-description {
     font-size: var(--fs-400);
