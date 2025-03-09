@@ -6,9 +6,12 @@
   --footer-bg-clr: hsl(312, 98%, 79%);
 
   --dark-purple-clr: #472982;
+  --neon-green-clr: #c0ff12;
+  --neon-green-dim-clr: #b1eb11;
 
-  --primary-btn-clr: hsl(204, 100%, 79%);
-  --primary-btn-dim-clr: hsl(204, 75%, 86%);
+
+  --primary-btn-clr: var(--neon-green-clr);
+  --primary-btn-dim-clr: var(--neon-green-dim-clr);
   --secondary-btn-clr: hsl(52, 100%, 50%);
   --secondary-btn-dim-clr: hsl(52, 100%, 72%);
 
