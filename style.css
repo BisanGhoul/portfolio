@@ -277,6 +277,10 @@ h3{
   text-align: initial;
 }
 
+form{
+  text-align: initial;
+}
+
 /* button*/
 
 .button {
@@ -543,7 +547,7 @@ h2::before {
   width: min(var(--max-width), calc(100% - (var(--horizontal-padding) * 2)));
   margin-inline: auto;
   background-color: var(--form-bg-clr);
-  padding: var(--horizontal-padding);
+  padding: 2rem;
   border-radius: 10px;
   border: 2px solid black;
   box-shadow: 8px 8px 0px black;
@@ -556,15 +560,15 @@ h2::before {
 }
 
 .button[type="submit"] {
-  margin-top: 0.5rem;
-  padding-block: 0.2rem;
+  margin-top: 1rem;
+  padding-block: 0.4rem;
   background-color: var(--secondary-btn-clr);
 }
 
 label {
   font-weight: bold;
   display: block;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 input,
@@ -575,7 +579,7 @@ textarea {
   border: 2px solid black;
   border-radius: 100vmax;
   background-color: var(--main-bg-clr);
-  box-shadow: 8px 8px 0px black;
+  box-shadow: 4px 4px 0px black;
 }
 
 textarea {
