@@ -269,6 +269,14 @@ body {
   background-color: var(--main-bg-clr);
 }
 
+section{
+  text-align: center;
+}
+
+h3{
+  text-align: initial;
+}
+
 /* button*/
 
 .button {
@@ -416,7 +424,30 @@ a:active {
 
 #about-section {
   background-color: var(--primary-bg-clr);
-  border-bottom: 2px SOLID BLACK;
+  border: 6px solid black;
+  box-shadow: 10px 10px 0px black;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 45%;
+  width: 105%;
+  height: 45%;
+  background: yellow;
+  z-index: -1; /* Places highlight behind text */
+  transform: rotate(-2deg);
+  opacity: 0.8; /* Slight transparency for a marker effect */
+  border-radius: 10px;
 }
 
 #about-section p {
