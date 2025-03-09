@@ -269,11 +269,13 @@ body {
   background-color: var(--main-bg-clr);
 }
 
-section:not(#home-section){
+section:not(#home-section) {
   text-align: center;
 }
 
-h3, form, p{
+h3,
+form,
+p {
   text-align: initial;
 }
 
@@ -436,7 +438,7 @@ h2 {
   z-index: 1;
 }
 
-h2::before {
+h2::before:not(.form-header) {
   content: "";
   position: absolute;
   left: -5px;
@@ -496,7 +498,7 @@ h2::before {
   box-shadow: 6px 6px 0px 0px black;
 }
 
-#projects-section p{
+#projects-section p {
   text-align: initial;
 }
 
@@ -534,6 +536,15 @@ h2::before {
 /* form */
 
 #contact-section {
+  background-color: var(--dark-purple-clr);
+  border-bottom: 2px solid black;
+}
+
+#contact-section h2 {
+  color: white;
+}
+
+.contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -561,7 +572,7 @@ h2::before {
 
 .button[type="submit"] {
   margin-top: 1rem;
-  padding-block: 0.4rem;
+  padding-block: 0.7rem;
   background-color: var(--secondary-btn-clr);
 }
 
@@ -569,6 +580,7 @@ label {
   font-weight: bold;
   display: block;
   margin-top: 15px;
+  font-family: var(--ff-secondary);
 }
 
 input,
@@ -580,6 +592,7 @@ textarea {
   border-radius: 100vmax;
   background-color: var(--main-bg-clr);
   box-shadow: 4px 4px 0px black;
+  font-family: var(--ff-secondary);
 }
 
 textarea {
@@ -587,7 +600,7 @@ textarea {
   height: 150px;
 }
 
-@media (max-width: 50em){
+@media (max-width: 50em) {
   textarea {
     border-radius: 40px;
     height: 100px;
@@ -600,8 +613,6 @@ footer {
   background-image: url("assets/cartographer.png");
   background-color: var(--footer-bg-clr);
   text-align: center;
-  border-top: 2px solid var(--dark-purple-clr);
-
   display: flex;
   flex-direction: column; /* Stack the text and social links vertically */
   align-items: center; /* Center items horizontally */
