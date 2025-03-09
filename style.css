@@ -500,6 +500,10 @@ h2::before {
   box-shadow: 6px 6px 0px 0px black;
 }
 
+#projects-section p{
+  text-align: initial;
+}
+
 /* .projects-container{
   background-color: #C0FF12;
   border-radius: 10px;
@@ -590,30 +594,46 @@ textarea {
 /* footer */
 
 footer {
+  background-image: url("assets/cartographer.png");
   background-color: var(--footer-bg-clr);
   text-align: center;
   border-top: 2px solid var(--dark-purple-clr);
+
+  display: flex;
+  flex-direction: column; /* Stack the text and social links vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Vertically center content if there's extra space */
+  /* padding: 2rem 0; Add padding to create space around content */
 }
 
 footer p {
   color: var(--main-bg-clr);
+  margin: 1rem;
 }
+
 .social-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: var(--size-800);
+  gap: var(--size-600);
+  border: 2px solid black;
+  box-shadow: 4px 4px 0px black;
+  background-color: var(--main-bg-clr);
+  width: fit-content;
+  height: auto;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
 }
 
 .social-links a {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 65px;
+  /* height: 40px; */
 }
 
 .social-links img {
   width: 100%;
   height: 100%;
-  filter: invert(100%);
   transition: transform 0.2s ease-in-out;
 }
 
