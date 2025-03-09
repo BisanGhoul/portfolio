@@ -405,13 +405,13 @@ a:active {
 
 #home-section{
   background-image: url("assets/Blue_Grid_Pattern_Background.png");
+  border-bottom: 2PX SOLID BLACK;
 }
 
 /* about me section */
 
 #about-section {
-  background-color: var(--primary-bg-clr);
-  padding-block: var(--size-500);
+  background-color: var(--primary-bg-clr);  border-bottom: 2PX SOLID BLACK;
 }
 
 #about-section p {
@@ -449,6 +449,11 @@ a:active {
 }
 
 /* projects section */
+
+#projects-section{
+  border-bottom: 2PX SOLID BLACK;
+}
+
 .projects-container{
   background-color: #C0FF12;
   border-radius: 10px;
@@ -542,15 +547,11 @@ textarea {
 
 footer {
   background-color: var(--footer-bg-clr);
-  padding: var(--size-900);
-  padding-top: var(--size-500);
   text-align: center;
-  margin-top: var(--size-900);
   border-top: 2px solid var(--dark-purple-clr);
 }
 
 footer p{
-  margin: var(--size-500);
   color: var(--main-bg-clr);
 }
 .social-links {
