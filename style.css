@@ -9,7 +9,6 @@
   --neon-green-clr: #c0ff12;
   --neon-green-dim-clr: #b1eb11;
 
-
   --primary-btn-clr: var(--neon-green-clr);
   --primary-btn-dim-clr: var(--neon-green-dim-clr);
   --secondary-btn-clr: hsl(52, 100%, 50%);
@@ -33,6 +32,7 @@
 
   /*48 40 36 32 28 24 20 16 14*/
   --fs-900: 4.5rem;
+  --fs-850: 3rem;
   --fs-800: 2.5rem;
   --fs-700: 2.25rem;
   --fs-600: 2rem;
@@ -63,9 +63,10 @@
   --size-100: 0.25rem;
 }
 
-@media (min-width: 50em) {
+@media (max-width: 50em) {
   :root {
-    /*TODO: change font sizes*/
+    --fs-title: var(--fs-850);
+    --fs-btn: var(--fs-350);
   }
 }
 
@@ -255,7 +256,7 @@ svg {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
-  #home-section{
+  #home-section {
     height: 100vh;
   }
 }
@@ -278,7 +279,7 @@ body {
   border: 1px solid black;
   padding: 0.5em;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-400);
+  font-size: var(--fs-btn);
   color: var(--primary-txt-clr);
   line-height: 1;
   /* font-size: 24px; */
@@ -406,15 +407,16 @@ a:active {
   }
 }
 
-#home-section{
+#home-section {
   background-image: url("assets/Blue_Grid_Pattern_Background.png");
-  border-bottom: 2PX SOLID BLACK;
+  border-bottom: 2px SOLID BLACK;
 }
 
 /* about me section */
 
 #about-section {
-  background-color: var(--primary-bg-clr);  border-bottom: 2PX SOLID BLACK;
+  background-color: var(--primary-bg-clr);
+  border-bottom: 2px SOLID BLACK;
 }
 
 #about-section p {
@@ -453,23 +455,28 @@ a:active {
 
 /* projects section */
 
-#projects-section{
-  border-bottom: 2PX SOLID BLACK;
+#projects-section {
+  background-color: #90ee90;
+  border-bottom: 2px SOLID BLACK;
 }
 
-.projects-container{
+#projects-section img {
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px 0px black;
+}
+
+/* .projects-container{
   background-color: #C0FF12;
   border-radius: 10px;
   border: 2px solid black;
-}
+} */
 
 .proj-description {
-    font-size: var(--fs-400);
+  font-size: var(--fs-400);
 }
 
 .mg-btm {
   margin-bottom: 5rem;
-
 }
 
 @media (max-width: 75em) {
@@ -486,12 +493,12 @@ a:active {
 
   .proj-description {
     font-size: var(--fs-300);
-}
+  }
 }
 
 /* form */
 
-#contact-section{
+#contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,19 +512,19 @@ a:active {
   width: min(var(--max-width), calc(100% - (var(--horizontal-padding) * 2)));
   margin-inline: auto;
   background-color: var(--form-bg-clr);
-  padding:var(--horizontal-padding);
+  padding: var(--horizontal-padding);
   border-radius: 10px;
   border: 2px solid black;
-  box-shadow: 8px 8px 0px black; 
+  box-shadow: 8px 8px 0px black;
   font-size: var(--fs-400);
 }
 
-.button-container{
+.button-container {
   display: flex;
   justify-content: flex-end;
 }
 
-.button[type="submit"]{
+.button[type="submit"] {
   margin-top: 0.5rem;
   padding-block: 0.2rem;
   background-color: var(--secondary-btn-clr);
@@ -529,22 +536,21 @@ label {
   margin-top: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
   border: 2px solid black;
   border-radius: 100vmax;
   background-color: var(--main-bg-clr);
-  box-shadow: 8px 8px 0px black; 
-
+  box-shadow: 8px 8px 0px black;
 }
 
 textarea {
   border-radius: 40px;
   height: 150px;
 }
-
 
 /* footer */
 
@@ -554,7 +560,7 @@ footer {
   border-top: 2px solid var(--dark-purple-clr);
 }
 
-footer p{
+footer p {
   color: var(--main-bg-clr);
 }
 .social-links {
@@ -572,10 +578,10 @@ footer p{
 .social-links img {
   width: 100%;
   height: 100%;
-  filter: invert(100%); 
+  filter: invert(100%);
   transition: transform 0.2s ease-in-out;
 }
 
 .social-links a:hover img {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
