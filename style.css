@@ -279,6 +279,13 @@ p {
   text-align: initial;
 }
 
+a:link {
+  color: inherit; 
+}
+
+a:visited {
+  color: inherit; 
+}
 /* button*/
 
 .button {
