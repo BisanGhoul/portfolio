@@ -269,15 +269,11 @@ body {
   background-color: var(--main-bg-clr);
 }
 
-section{
+section:not(#home-section){
   text-align: center;
 }
 
-h3{
-  text-align: initial;
-}
-
-form{
+h3, form, p{
   text-align: initial;
 }
 
@@ -589,6 +585,13 @@ textarea {
 textarea {
   border-radius: 40px;
   height: 150px;
+}
+
+@media (max-width: 50em){
+  textarea {
+    border-radius: 40px;
+    height: 100px;
+  }
 }
 
 /* footer */
