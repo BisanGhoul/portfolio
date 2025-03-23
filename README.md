@@ -1,7 +1,7 @@
 # Neo-Brutalist Portfolio  
 
 This is my personal portfolio website, created as part of my internship at Foothill Technology Solutions (FTS). It showcases my projects, skills, and experience in software development.  
-
+![Portfolio Preview](portfolio-home=section-screenshot.png)
 🔗 **Live Demo**: [Visit My Portfolio](https://bisanghoul.github.io/portfolio/)
 
 ## Table of Contents  
